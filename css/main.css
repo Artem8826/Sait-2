@@ -1,0 +1,326 @@
+*{
+    box-sizing: border-box;
+}
+/* Общий селектор по тегу */
+body{
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.none{
+    display: none !important;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+.header{
+    position: relative;
+
+    /*Определяем модель flex-box для header*/
+    display: flex;
+    flex-direction: column; /*Выстраиваем элементы в колонку,основная ось У*/
+    justify-content: center;/*Выравниваем по основной оси*/
+    align-items: center;/*Выравнивание по поперечной оси*/
+
+    width: 100%;
+    height: 100vh;
+    /* background-color: #556882; */
+
+    /* background-image: url("./../img/Header/header.jpg"); */
+    background-position: center;
+    background-size: cover;
+
+
+}
+.headerOne{
+    margin: 0;
+    margin-bottom: 25px;
+    color: #FFF;
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 130%;
+
+}
+
+.headerTwo{
+    margin: 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+}
+
+.shevron{
+    width: 48px;
+    height: 48px;
+    /* background-color: black; */
+    background-image: url(./../img/chevron-down.svg);
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin-bottom:30px;
+    transform: translate(-50%, 0px); /*Двигаем на величину от половины размера картинки*/
+}
+
+.portfolio{
+    padding-top: 80px;
+    padding-bottom: 115px;
+
+ 
+}
+
+.conteiner{
+max-width: 1140px;
+margin-left: auto;
+margin-right: auto;
+padding-left: 15px;
+padding-right: 15px;
+
+}
+
+.section-haeder{
+    text-align: center;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 130%;
+    color: black;
+    margin: 0px;
+    margin-bottom: 70px;
+}
+
+.flex-conteiner{
+    /* Выравнить в линию */
+    display: flex;
+    /* Перенести на след строку */
+    flex-wrap: wrap;
+    /* Выравнивание контейнеров по краям контейнера */
+    justify-content: space-between; 
+}
+
+
+
+.conteiner-one{
+    max-width: 540px;
+    /* max-width: calc(50% - 15px); */
+    background-color: #FFF;
+
+    margin-bottom: 30px;
+    box-shadow: 0px 10px 40px 0px rgba(126, 155, 189, 0.35);
+/* Медленно подымается вверх */
+    transition:transform 0.2s ease-in;
+}
+.conteiner-one:hover {
+    /* поднятие по У верх */
+    transform: translateY(-15px);
+
+}
+
+/* Выбор последнего и элемента по номеру с конца */
+.conteiner-one:last-child,.conteiner-one:nth-last-child(2){
+margin-bottom: 0px;
+}
+
+.conteiner-image{
+    margin-bottom: 20px;
+
+}
+
+.conteiner-one-text{
+    margin: 0px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 130%;
+    margin-bottom: 13px;
+}
+
+.conteiner-one p {
+
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+}
+.conteiner-one-button{
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+    color: #000;
+    transition:color 0.2s ease-in;
+}
+.conteiner-one-button:hover {
+    color: #3376c3;
+
+}
+
+.footer{
+    background: #1E4776; 
+    padding-top: 45px;
+    padding-bottom: 129px;
+}
+
+.BoxFlexFuter{
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+}
+.TextOne {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.3;
+    max-width: 350px;
+    flex-grow: 1;
+
+}
+.TextOne h3 {
+    margin: 0px;
+    margin-bottom: 15px;
+    color: #7E9EC9;
+    font-size: 28px;
+    font-weight: 700;
+}
+.BoxFlexFuter p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 0px;
+    margin-bottom: 15px;
+    color: #7E9EC9;
+}
+.sos{
+    max-width: 350px;
+    flex-grow: 1;
+}
+
+.sos p {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.sos-icon{
+    display: flex;
+    align-items: center;
+
+}
+.sos-icon >*+*{
+    margin-left: 30px;
+}
+
+.sviaz{
+    max-width: 350px;
+    flex-grow: 1; 
+}
+.button{
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 44px;
+
+    height: 50px;
+    border-radius: 50px;
+    border: 3px solid #FFF;
+
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase; 
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+}
+
+.button:hover{
+    background-color: #FFF;
+    color: #1E4776;
+}
+
+.sviaz p {
+    color: #7E9EC9;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%; 
+    margin: 15px 0px;
+}
+
+
+.project{
+padding: 80px 0 120px;
+text-align: center;
+
+}
+
+.forest-header{
+    margin: 0 auto 40px;
+}
+
+.conteiner h1 {
+
+
+    font-family: Montserrat;
+    font-size: 46px;
+
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.image-forest {
+margin-bottom: 70px;
+}
+
+.project-disk {
+max-width: 730px;
+margin: 0 auto 0;
+}
+.obzac {
+    margin: 0;
+    margin-bottom: 15px;
+
+
+
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.silka{
+    margin: 0;
+    margin-bottom: 60px;
+}
+
+.button-forest{
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 54px;
+
+    height: 60px;
+    border-radius: 50px;
+    border: 3px solid #275BEC;
+
+    color: #275BEC;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase; 
+    text-decoration: none;
+    transition:all 0.2s ease-in;
+}
+
+.button-forest:hover{
+    background-color: #275BEC;;
+    color: #ffffff;
+}

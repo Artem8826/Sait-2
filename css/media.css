@@ -1,0 +1,113 @@
+/* Интеграция под мобилку под разрещение 1140 */
+
+@media( max-width:1140px ) {
+
+    .conteiner-one{
+        max-width: calc(50% - 15px);
+    }
+    .footer{
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+    .BoxFlexFuter{
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+    }
+    .button{
+        margin-bottom: 19px;
+    }
+    .sviaz p{
+        margin-top: 0%;
+        margin-bottom: 50px;
+        font-size: 14px;
+    }
+    .sos-icon{
+        margin-bottom: 50px;
+    }
+    .sos p{
+        font-size: 14px;
+    }
+    .TextOne h3{
+        font-size: 18px;
+    }
+    .BoxFlexFuter p{
+        font-size: 14px;
+    }
+    .TextOne p{
+        margin-bottom: 0px;
+    }
+    /* .BoxFlexFuter:nth-last-child(1){
+        margin-bottom: 0px;
+        } */
+        .project{
+            padding-top: 40px;
+            padding-bottom: 60px;
+        }
+        .forest-header{
+            margin-bottom: 30px;
+        }
+        .image-forest{
+            margin-bottom: 20px;
+        }
+        .conteiner h1{
+            font-size: 28px;
+        }
+        .silka{
+            margin-bottom: 50px;
+        }
+
+        .button-forest{
+            padding: 0px 10px;
+        }
+}
+
+/* Интеграция под мобилку под разрещение 760 */
+@media( max-width:760px ) {
+
+
+    .headerOne{
+        font-size: 32px;
+
+    }
+
+    .headerTwo{
+        font-size: 14px;
+    }
+    .portfolio{
+        padding-top: 40px;
+        padding-bottom: 60px;
+    
+    }
+    .section-haeder{
+    
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+    .conteiner-one{
+        max-width: 100%;
+
+        
+    }
+    .conteiner-one-button{
+        padding: 15px;
+    }
+    .flex-conteiner{
+        justify-content: center;
+    }
+    .conteiner-image{
+        margin-bottom: 10px;
+    }
+    .conteiner-one-text{
+        font-size: 18px;
+    }
+    .conteiner-one p{
+        font-size: 14px;
+    }
+    .conteiner-one:nth-last-child(2){
+    margin-bottom: 30px; 
+    }
+
+
+
+    }
